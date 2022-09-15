@@ -4,18 +4,9 @@
    text-align: center; 
 }
 
-body{
-    min-height: 100vh;
-    transition: 0.5s;
-}
-img{
-    margin: 0 auto;
-    height: 150px;
-    visibility: hidden;
-    transition: 1s;
-
-}
-
-.show{
-    visibility: visible;
+.contaainer{
+    background-color: rgb(97, 65, 26);
+    width: 80%;
+    height: 200px;
+    color: white;
 }

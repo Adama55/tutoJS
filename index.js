@@ -1,31 +1,25 @@
-function convPoids(id, valeur){
-    if(id == "grammes"){
-        kilos.value = valeur /1000;
-        livres.value = valeur * 0.0022046;
-    }else if(id == "kilos"){
-        grammes.value = valeur * 1000;
-        livres.value = valeur * 2.2046;
-    }else if(id == "livres"){
-        grammes.value = valeur / 0.0022046;
-        kilos.value = valeur / 2.2046;
+let btn1 =document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+
+let id1 = document.getElementById("id1");
+let id2 = document.getElementById("id2");
+
+btn1.addEventListener(
+    "click", ()=> {
+        if(getComputedStyle(id1).display != "none"){
+            id1.style.display = "none";
+        }else {
+            id1.style.dysplay = "block";
+        }
+    }
+)
+
+function buton() {
+    if(getComputedStyle(id2).display != "none"){
+        id2.style.display = "none";
+    }else {
+        id2.style.dysplay = "block";
     }
 }
 
-let grammes = document.getElementById("grammes");
-let kilos = document.getElementById("kilos");
-let livres = document.getElementById("livres");
-
-grammes.addEventListener(
-    "input",function(){
-        convPoids(this.id, this.value);
-        });
-kilos.addEventListener(
-    "input",function(){
-        convPoids(this.id, this.value);
-        });
-livres.addEventListener(
-    "input",
-     function(){
-        convPoids(
-            this.id,
-            this.value);});
+btn2.onmouseover = buton;

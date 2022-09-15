@@ -4,9 +4,17 @@
    text-align: center; 
 }
 
-.contaainer{
+#id1{
     background-color: rgb(97, 65, 26);
     width: 80%;
-    height: 200px;
+    height: 100px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#id2{
+    background-color: rgb(16, 85, 39);
+    width: 80%;
+    height: 100px;
     color: white;
 }
